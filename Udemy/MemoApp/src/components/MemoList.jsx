@@ -36,6 +36,7 @@ export default function MemoList(props) {
     <View style={styles.container}>
       <FlatList
         data={memos}
+        // eslint-disable-next-line react/jsx-no-bind
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
